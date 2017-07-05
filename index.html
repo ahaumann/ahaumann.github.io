@@ -3,11 +3,8 @@
     <head>
         <title>F. Alexander Haumann</title>
         <meta charset="utf-8">
-        <meta http-equiv="refresh" content="1; url=http://uppeople.ethz.ch/AlexanderHaumann">
+        <meta http-equiv="refresh" content="5; url=http://uppeople.ethz.ch/AlexanderHaumann">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="text/javascript">
-            window.location.href = "http://uppeople.ethz.ch/AlexanderHaumann"
-        </script>
 		<style type="text/css">
     body {
         background-color: #f0f0f2;
@@ -32,7 +29,17 @@
 	<div>
 		<h1>F. Alexander Haumann</h1>
 		<p>Welcome to my website at <a title="" href="https://github.com/ahaumann">GitHub</a>. More content following soon ...</p>
-		<p>... for now you will be redirected to my <a title="" href="http://uppeople.ethz.ch/AlexanderHaumann">hompage</a>.</p>
+		<p>... for now you will be redirected in <span id="counter">8</span> seconds to my <a title="" href="http://uppeople.ethz.ch/AlexanderHaumann">hompage</a> (otherwise click <a title="" href="http://uppeople.ethz.ch/AlexanderHaumann">here</a>).</p>
+		<script type="text/javascript">
+function countdown() {
+    var i = document.getElementById('counter');
+    if (parseInt(i.innerHTML)<=0) {
+        location.href = 'http://uppeople.ethz.ch/AlexanderHaumann';
+    }
+    i.innerHTML = parseInt(i.innerHTML)-1;
+}
+setInterval(function(){ countdown(); },1000);
+		</script>
 	</div>
 	</body>
 </html>
