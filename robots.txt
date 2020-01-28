@@ -1,2 +1,4 @@
 User-agent: *
-Sitemap: http://www.ahaumann.net
+Allow: /
+
+Sitemap: https://www.ahaumann.net/sitemap.xml
